@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PersistenceDemo</string>
+    <string name="hello">Howdy, %s!</string>
+    <string name="changed">\nYou %s change your username this session.</string>
+    <string name="did">did</string>
+    <string name="didnt">didn\'t yet</string>
+    <string name="default_username">Friend</string>
+    <string name="username_label">Username:</string>
+    <string name="password_label">Password:</string>
+    <string name="login">Set Username and Password</string>
+    <string name="clear_log">Clear Log File</string>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:id="@+id/log"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#1F1F1F"
+            android:text="" />
+    </ScrollView>
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:onClick="clearLogClick"
+        android:text="@string/clear_log" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/username_label"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:text="@string/username_label" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/password_label"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:text="@string/password_label" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:password="true"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:onClick="loginClick"
+        android:text="@string/login" />
+
+</LinearLayout>
